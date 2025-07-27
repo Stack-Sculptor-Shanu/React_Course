@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: transparent;
+    /* border: 1px solid gainsboro; */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    /* background-color: blue; */
+}
+.navbar>.logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px;
+    /* background-color: blanchedalmond; */
+}
+.logo>svg{
+    fill: white;
+    margin-left: 40px ;
+}
+.navbar>.navlist{
+    width: 55%;
+    height: 100%;
+    font-family: sans-serif;
+    /* background-color: green; */
+}
+.navlist>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    font-size: small;
+    font-family: sans-serif;
+}
+.navlist>ul>li:hover{
+ text-decoration: underline;
+ cursor: pointer;
+}
+.navbar>.menu{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 50px;
+    gap: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: white;
+    /* background-color: yellow; */
+}
+.menubar>span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+.videosection{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: red; */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: -1; /* Ensure the video is in the background */
+  }
+  
+  .content {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 44%;
+    left: 5%;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    justify-content: center;
+    gap: 20px;
+    padding-left: 40px;
+    /* background-color: red; */
+  }
+  .content>h1{
+    text-align: start;
+    width: 80%;
+    height: 40%;
+    font-size: 45px;
+    font-weight: 400;
+    /* background-color: blue; */
+  }
+  .content>button{
+   padding: 15px 50px;
+   background-color: transparent;
+   border: 2px solid white;
+   text-transform: uppercase;
+   cursor: pointer;
+   color: white;
+   font-weight: 600;
+   position: relative;
+   overflow: hidden;
+   transition: all 0.3s ease-in-out;
+  }
+  .content>button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0%;
+    z-index: -1;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .content>button:hover::after{
+    top: 0%;
+  }
+  .content>button:hover{
+    color: black;
+  }
+
+  .image-container{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    border-bottom: 2px solid black;
+    background-color: green;
+  }
+  footer{
+    width: 100%;
+    height: 78px;
+    background-color: rgb(1,0,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer>ul{
+    width: 22.8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: sans-serif;
+    list-style: none;
+    font-size: small;
+    text-transform: uppercase;
+  }
+  footer>ul>li{
+    font-size: 10px;
+  }
+  footer>ul>:nth-child(2){
+    font-weight: 900;
+  }
+  footer>ul>:nth-child(3){
+    font-weight: 900;
+  }

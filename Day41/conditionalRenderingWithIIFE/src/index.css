@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+sup{
+    background-color: rebeccapurple;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+}

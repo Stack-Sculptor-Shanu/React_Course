@@ -1,0 +1,36 @@
+.navlist>li>a {
+    font-weight: 500;
+    color: white;
+}
+.logo>span>img{
+    margin-left: -15px;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 175px;
+}
+.box{
+    height: 250px;
+    width: 200px;
+    gap: 100px;
+}
+.box>.sl{
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    border: 1px solid #0649E7;
+    border-radius: 50%;
+    padding: 0 17px;
+}
+.box>div{
+    width: 100%;
+    margin-top: 12px;
+    border: 1px solid #0649E7;
+}
+.box>p{
+    color: #0649E7;
+    font-size: large;
+    margin-top: 12px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Mobuis Engine</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- 1st page along with navbar -->
+    <div class="bg-gradient-to-r from-[#cbc7ff] via-[#497cfa] to-[#000109] h-[100vh]">
+        <!-- Navbar starts here -->
+        <navbar class="flex justify-around h-[70px] items-center">
+            <div class="logo flex items-center">
+                <span><img src="./assets/logo.png" alt=""></span><p class="text-white">MobuisEngine</p>
+            </div>
+            <div class="">
+                <ul class="flex gap-12 navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">More <span><i class="fa-solid fa-caret-down"></i></span></a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button class="bg-red-100 p-2 px-9 rounded-4xl text-blue-900 font-[600]">Get Started</button>
+            </div>
+        </navbar>
+
+        <!-- hero section starts here -->
+        <div class="flex justify-evenly ml-25 items-center w-auto h-[90.5vh]">
+            <div class="w-[50%] h-[360.22px]">
+                <h1 class="text-[75px] font-[700] leading-20 text-[#fff]">Land job interviews <span class="text-[#0649E7]">10x</span> faster</h1>
+
+                <p class="font-[400] text-[20px] text-[#fff] mt-[20px]">Custom built resumes that match your goals, keywords, and <br> recruiter expectations.</p>
+
+                <button class="bg-[#FFF] p-[10px] px-[30px] rounded-4xl text-[#497cfa] mt-[20px]">Get Started <span><i class="fa-solid fa-arrow-right"></i></span></button>
+            </div>
+            <div class="w-[30%]">
+                <img src="./assets/hero-right.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- How we work starts here -->
+    <div class="work h-[45vh]  gap-6">
+        <div>
+            <h1 class="text-[#497cfa] text-[24px] pt-[20px] font-[500]">How we work?</h1>
+        </div>
+        <section class="flex justify-between">
+            <div class="box">
+                <p class="sl">1</p>
+                <div></div>
+                <p>Submit Intake Form</p>
+            </div>
+            <div class="box">
+                <p class="sl">2</p>
+                <div></div>
+                <p>We do the search and curation for list of jobs</p>
+            </div>
+            <div class="box">
+                <p class="sl">3</p>
+                <div></div>
+                <p>You approve, we do the tedious part (applying)</p>
+            </div>
+            <div class="box">
+                <p class="sl">4</p>
+                <div></div>
+                <p>You get the interviews</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

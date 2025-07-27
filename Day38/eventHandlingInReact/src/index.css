@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.grandparent{
+    background: #66c651;
+    height: 100px;
+    margin: 10px;
+    color: #111;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+.parent{
+    background: #99c651;
+    height: 100px;
+    margin: 10px;
+    color: #111;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+.child{
+    background: #5178c6;
+    height: 100px;
+    margin: 10px;
+    color: #111;
+    border: 1px solid #ccc;
+    width: 50%;
+}

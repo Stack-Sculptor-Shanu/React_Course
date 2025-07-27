@@ -1,0 +1,130 @@
+[
+  {
+    "course_id": 1,
+    "course_name": "MERN stack",
+    "duration": 4,
+    "trainers": [
+      "Shanu",
+      "Lavan",
+      "Sailaja"
+    ],
+    "price": 60000,
+    "branch": "Bhubaneswar",
+    "course_Details": {
+      "frontend": [
+        "html",
+        "CSS",
+        "JS",
+        "React",
+        "Redux",
+        "Redux-toolkit",
+        "Reqct-Query",
+        "tailwindCSS",
+        "Bootstrap"
+      ],
+      "backend": [
+        "nodejs",
+        "express js",
+        "mongoose",
+        "rest API",
+        "graphQL"
+      ],
+      "database": [
+        "mongoDB",
+        "mysql",
+        "postgresql"
+      ],
+      "tools": [
+        "git",
+        "github",
+        "VS code",
+        "linux"
+      ]
+    }
+  },
+  {
+    "course_id": 2,
+    "course_name": "Java full stack",
+    "duration": 4,
+    "trainers": [
+      "Shanu",
+      "Lavan",
+      "Sailaja"
+    ],
+    "price": 60000,
+    "branch": "Bhubaneswar",
+    "course_Details": {
+      "frontend": [
+        "html",
+        "CSS",
+        "JS",
+        "Java",
+        "Spring",
+        "springboot",
+        "tailwindCSS",
+        "Bootstrap"
+      ],
+      "backend": [
+        "nodejs",
+        "express js",
+        "mongoose",
+        "rest API",
+        "graphQL"
+      ],
+      "database": [
+        "mongoDB",
+        "mysql",
+        "postgresql"
+      ],
+      "tools": [
+        "git",
+        "github",
+        "VS code",
+        "linux"
+      ]
+    }
+  },
+  {
+    "course_id": 3,
+    "course_name": "Python full stack",
+    "duration": 4,
+    "trainers": [
+      "Shanu",
+      "Lavan",
+      "Sailaja"
+    ],
+    "price": 60000,
+    "branch": "Bhubaneswar",
+    "course_Details": {
+      "frontend": [
+        "html",
+        "CSS",
+        "JS",
+        "Python",
+        "django",
+        "flask",
+        "Reqct-Query",
+        "tailwindCSS",
+        "Bootstrap"
+      ],
+      "backend": [
+        "nodejs",
+        "express js",
+        "mongoose",
+        "rest API",
+        "graphQL"
+      ],
+      "database": [
+        "mongoDB",
+        "mysql",
+        "postgresql"
+      ],
+      "tools": [
+        "git",
+        "github",
+        "VS code",
+        "linux"
+      ]
+    }
+  }
+]

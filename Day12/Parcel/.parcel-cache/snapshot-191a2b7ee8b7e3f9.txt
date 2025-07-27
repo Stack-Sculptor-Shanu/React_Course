@@ -1,0 +1,10 @@
+9
+53C:\Shanu\TestYantra\ReactJS\Day12\Parcel\package.json133960103520973040 0
+45C:\Shanu\TestYantra\ReactJS\Day12\Parcel\dist133960103656578920 1
+51C:\Shanu\TestYantra\ReactJS\Day12\Parcel\index.html133960101070520576 0
+68C:\Shanu\TestYantra\ReactJS\Day12\Parcel\dist\Parcel.3464ddca.js.map133960103656170640 0
+49C:\Shanu\TestYantra\ReactJS\Day12\Parcel\index.js133960098292988157 0
+56C:\Shanu\TestYantra\ReactJS\Day12\Parcel\dist\index.html133960103656070977 0
+64C:\Shanu\TestYantra\ReactJS\Day12\Parcel\dist\Parcel.3464ddca.js133960103656086178 0
+64C:\Shanu\TestYantra\ReactJS\Day12\Parcel\dist\Parcel.c36f364e.js133960103656533370 0
+68C:\Shanu\TestYantra\ReactJS\Day12\Parcel\dist\Parcel.c36f364e.js.map133960103656568656 0

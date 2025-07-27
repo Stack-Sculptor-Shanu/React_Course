@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #efefef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    background: #fff;
+    height: 70px;
+    width: 100%;
+}
+.navbar_container{
+    background-color: #fff;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.logoblock a{
+    text-decoration: none;
+    color: rgba(238, 112, 169, 0.895);
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.menublock ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menublock ul li a{
+    color: #111;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 10px;
+}

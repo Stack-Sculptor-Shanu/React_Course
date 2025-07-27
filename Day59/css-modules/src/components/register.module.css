@@ -1,0 +1,42 @@
+@value blue: #0c77f8;
+@value red: #ff0000;
+@value green: #aaf200;
+
+/* Global css */
+:global .title {
+    font-size: 10em;
+}
+
+/* Local */
+:local .active{
+    background: black;
+}
+:local .shanu{
+    background-color: purple;
+}
+
+.auth{
+    background-color: #efefef;
+}
+.form{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    padding: 20px;
+}
+.label{
+    background: #eee;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+.input {
+    background: transparent;
+    border: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    color: #111;
+}

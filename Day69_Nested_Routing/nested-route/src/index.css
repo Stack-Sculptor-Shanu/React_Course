@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;;
+}
+#dashboard .container{
+    display: flex;
+}
+#dashboard aside.sidebar{
+    flex-basis: 20%;
+    background-color: #673AB7;
+    height: 100vh;
+    padding: 10px;
+    color: #fff;
+    border-radius: 0 60px 0 0;
+}
+#dashboard aside.content{
+    flex-basis: 80%;
+    background-color: #fff;
+    height: 100vh;
+    padding: 10px;
+    /* color: #673AB7; */
+}
+.menu ul{
+    list-style: none;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+.menu ul li{
+    padding: 0 10px;
+}
+.menu ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 8px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background: #290c5cd9;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+.menu ul li a:hover{
+    background-color: #00000095;
+}
+.logo{
+    padding: 15px 0;
+    font-size: 20px;
+}

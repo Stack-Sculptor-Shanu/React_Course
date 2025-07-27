@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #423163;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+#courseblock{
+    background-color: #26134B;
+}
+#courseblock article{
+    background-color: #26134B;
+    height: 100%;
+    margin: 20 auto;
+    padding: 10px;
+    display: flex;
+    width: 90%;
+}
+#courseblock article main{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100%;
+}
+.container .list{
+    flex-basis: 32%;
+    background: #1111116b;
+    padding: 10px;
+}
+
+#courseblock header h2{
+    color: yellow;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.list h2 {
+    color: #607D8B;
+    text-transform: capitalize;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    margin: 5px 0;
+}
+.list p {
+    color: #607d8be0;
+    font-size: 14px;
+    border-bottom: 1px solid #44444478;
+    padding: 10px 0;
+}
+.list>p, .list>div{
+    color: #607d8be0;
+    font-size: 14px;
+    border-bottom: 1px solid #44444478;
+    padding: 10px 0;
+}
+
+.trainer{
+    display: flex;
+    gap: 5px;
+    background: #444;
+}
+.trainer>p{
+    background: #607D8B;
+    font-size: 11px;
+    color: #111;
+    padding: 4px 10px;
+    margin: 4px 0;
+    border-radius: 5px;
+    border-bottom: 1px solid yellow;
+    text-transform: capitalize;
+}
+.c{
+    display: flex;
+    gap: 5px;
+}
+.c>span{
+    background: #607D8B;
+    font-size: 11px;
+    color: #111;
+    padding: 4px 10px;
+    margin: 4px 0;
+    border-radius: 5px;
+    border-bottom: 1px solid yellow;
+    text-transform: capitalize;
+}

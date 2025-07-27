@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: #efefef;
+}
+
+/* Navbar CSS starts here */
+#navbar_container{
+    background: #fff;
+    height: 80px;
+    width: 100%;
+}
+#navbar_container>article{
+    width: 80%;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.logoblock{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+.searchblock{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+}
+.menublock{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Service Block CSS starts here */
+#serviceBlock{
+    height: 100%;
+    background-color: wheat;
+}
+#serviceBlock>article{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+#serviceBlock>article>aside{
+    flex: 1;
+    
+}

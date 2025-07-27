@@ -1,0 +1,42 @@
+Module
+JavaScript modules allow you to break up your code into separate files.
+
+This makes it easier to maintain a code-base.
+
+Modules are imported from external files with the import statement.
+
+Modules also rely on type="module" in the <script> tag.
+
+
+In JS we have two types of modules first is common JS which is primarily used in NodeJS or backend another module is ES6 Module and it was introduced in 2015 and it can be used both frontend and backend.
+
+
+Note: If we want to use modules in JS in frontend it is mandatory to use type attribute in the script tag and value as module.
+
+
+Whenever we are sending something we call it export and receiving as import
+When it comes to export and import we have two kinds of export default and named
+
+
+export -- it means we are sending a set of code in a different file 
+import -- it means we are using a set of code in a file
+
+
+In ES6 module we can perform export and import in two ways either by default and named
+
+
+default export / import 
+1. From a single JS file we can make a single default export. while using default export you need to use two keywords at last 
+2. In default export we don't need to worry about the identifier
+
+
+Suppose we got a scenario where two files exporting something with the same variable name then if I import these two variables in the same file then we will face soem conflicts because whenever we are importing we are giving it a variable right so in named export we need to import teh content with teh exact name by which we have declared so we can't have same identifier in a file more than 1 time to overcome this issue we have something called alias
+like if I wanna import both variable then we need to write something like this 
+import sameVariable as a from 'file1.js'
+import sameVariable as b from 'file2js'
+
+
+here I am using as so we can just give it another name and we can access the same variable in my file.
+
+
+Now one more situatation occurs what if I wanna access all the exported variable then we have something called asterisk we have already used it as css universal selector but again we need to use alias here so that we can store this inside a variable. Now it will giving me an object with all variable names. Now if I wanna access any variable we need to use Object name.keyname this way we can access the all variable.

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EFEDFB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #344D70;
+}
+
+#mainBlock>article{
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #eee;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mainBlock>article h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#mainBlock> article main {
+    display: flex;
+    gap: 10px;
+}
+
+#mainBlock> article main>div {
+    background-color: #673ab71c;
+    flex: 1;
+    padding: 10px;
+}
+
+#mainBlock form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+#mainBlock form label {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    font-weight: 500;
+    color: #344D70;
+    text-transform: capitalize;
+}
+
+#mainBlock form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    color: #344D70;
+    border: 1px solid #335D;
+}
+
+#mainBlock form button {
+    background: #344D70;
+    border: 1px solid #344D70;
+    color: #fff;
+    border-radius: 4px;
+    width: auto;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#mainBlock .todo h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 0;
+    border-bottom: 1px solid #b7b9bc;
+    margin: 10px 0;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 2px 0px #ccc;
+}
+
+.todo table {
+    width: 100%;
+    border: 1px solid #344D70;
+    padding: 10px;
+}
+
+.todo table thead {
+    background: #344D70;
+    color: #fff;
+    /* display: block; */
+    padding: 10px;
+}
+
+.todo table tr, td, th {
+    border:  1px solid #ccc;
+    border-collapse: collapse;
+    width: fit-content;
+    padding: 10px;
+}
+
+.update, .delete {
+    
+}

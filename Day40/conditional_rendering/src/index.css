@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    background-color: rgb(159, 28, 215);
+    height: 70px;
+    width: 100%;
+}
+#navbar .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.container ul li a{
+    color: yellow;
+    text-decoration: none;
+    padding: 10px 20px;
+}

@@ -1,0 +1,23 @@
+import React from 'react'
+
+const Form = ({course,trainer,handleChange, handleSubmit}) => {
+  return (
+    <div className='form'>
+        <form >
+            <div className="form-group">
+                <label htmlFor="course">course</label>
+                <input type="text" placeholder='Enter course' name='course' required value={course} onChange={handleChange} />
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="trainer">Trainer</label>
+                <input type="text" placeholder='Enter trainer' name='trainer' required value={trainer} onChange={handleChange} />
+            </div>
+
+            <button onClick={handleSubmit}>Submit</button>
+        </form>
+    </div>
+  )
+}
+
+export default Form
