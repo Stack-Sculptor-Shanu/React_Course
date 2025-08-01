@@ -82,4 +82,90 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     margin: 3px 10px 10px 0;
+    border-right: 1px solid #ff9800;
+}
+.dashboard-content ul li .active {
+    background: #111;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    background: #d8d8d8ad;
+    border-bottom: 1px solid #673AB7;
+    margin: 10px 0;
+    padding: 0 0 5px 0;
+}
+figure a {
+    background-color: #FF5722;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #673AB7;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    width: auto;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+}
+figure a:hover{
+    background: #d79681;
+    border: 1px solid #FF5722;
+}
+#profile > article{
+    display: flex;
+    gap: 10px;
+
+}
+#profile article header {
+    flex-basis: 40%;
+    background: #fff;
+}
+#profile article header img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+#profile article main {
+    flex-basis: 60%;
+    background: #eee;
+    padding: 20px;
+}
+#profile article main h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #673ab7;
+    font-weight: 400;
+    color: #673AB7;
+    padding-bottom: 20px;
+}
+#profile article  main p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #888;
+    line-height: 20px;
+    padding: 20px 0;
+}
+#profile article main a {
+    background: orangered;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 3px solid orange;
+    text-transform: capitalize;
+}
+.back_btn{
+    padding: 5px 3px;
+    display: inline-block;
+    position: absolute;
+    right: 11px;
+    background: #ff572278;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #ff9800;
+    bottom: 10px;
 }

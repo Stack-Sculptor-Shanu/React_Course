@@ -1,27 +1,30 @@
 import React, { Fragment, useState } from 'react'
 import userdata from '../../userData.json'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const AllUsers = () => {
-  let [state,setstate] = useState(userdata)
-  const data = useLocation()
-  console.log(data)
+  let [users,setusers] = useState(userdata)
+  const {state} = useLocation()
+  console.log(state)
   return (
-    <div className='users'>
-      {
-        state.map.length>0 && state.map((ele)=>{
-          return <Fragment key={ele.id}>
-            <div className="container">
-              <figure>
-                <picture>
-                  <img src={ele.avatar_url} alt={ele.login} height={150} width={150} />
-                </picture>
-              </figure>
-            </div>
-          </Fragment>
-        })
-      }
-    </div>
+    <main>
+      <div className='users'>
+        {
+          users.map.length>0 && users.map((ele)=>{
+            return <Fragment key={ele.id}>
+              <div className="container">
+                <figure>
+                  <picture>
+                    <img src={ele.avatar_url} alt={ele.login} height={150} width={150} />
+                  </picture>
+                  <Link to={`/${ele.login}`} state={ele}>View More</Link>
+                </figure>
+              </div>
+            </Fragment>
+          })
+        }
+      </div>
+    </main>
   )
 }
 

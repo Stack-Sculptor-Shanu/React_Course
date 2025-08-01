@@ -1,11 +1,13 @@
 import React, { Fragment, useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Products = () => {
     let [pdata,setPdata] = useState(null)
+    const {state} = useLocation()
     let prod = async ()=>{
         let myData = await fetch('https://fakestoreapi.in/api/products')
         let {products} = await myData.json()
-        console.log(products)
+        // console.log(products)
         setPdata(products)
     }
 
@@ -13,6 +15,7 @@ const Products = () => {
       prod()
     },[])
 
+    console.log(state)
   return (
     <div className='products'>
       <h1>Products</h1>

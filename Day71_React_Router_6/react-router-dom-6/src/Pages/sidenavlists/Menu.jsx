@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Menu = () => {
   return (
@@ -10,19 +10,37 @@ const Menu = () => {
         <div className="menu">
             <ul>
                 <li>
-                    <Link to="/">Dashboard</Link>
+                    <NavLink to="/"
+                    //  style={({isActive})=>({
+                    //     background: isActive? 'red':"",
+                    //     borderBottom:isActive?`1px solid green`:""
+                    // })}
+                    // activeClassName = "selected"
+                    // activeStyle = {{color:"red"}} //!Not recommended
+                    >Dashboard</NavLink>
                 </li>
                 <li>
-                    <Link to="/">All users</Link>
+                    <NavLink to="/" style={({isActive})=>({
+                        background: isActive? 'yellow':""
+                    })}>All users</NavLink>
                 </li>
                 <li>
-                    <Link to="/products">Products</Link>
+                    <NavLink to="/products" style={({isActive})=>({
+                        background: isActive? 'yellow':""
+                    })}>Products</NavLink>
                 </li>
                 <li>
-                    <Link to="/players">Cricket Players</Link>
+                    <NavLink to="/players" style={({isActive})=>({
+                        background: isActive? 'yellow':""
+                    })}>Cricket Players</NavLink>
                 </li>
                 <li>
-                    <Link to="/login">Login</Link>
+                    <Link  to= {{
+                        pathname:"/login",
+                        search:"?sort=name", // a string of query string parameters
+                        state:{name:"Shanu"},
+                        hash:"#hash" //Suffix or prefix with hash
+                    }}>Login</Link>
                 </li>
             </ul>
         </div>

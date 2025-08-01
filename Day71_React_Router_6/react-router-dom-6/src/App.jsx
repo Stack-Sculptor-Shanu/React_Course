@@ -8,6 +8,7 @@ import AllUsers from './componenets/users/AllUsers'
 import Products from './componenets/products/Products'
 import Players from './componenets/Players/Players'
 import Login from './componenets/auth/Login'
+import Profile from './componenets/users/Profile'
 
 const App = () => {
     const router = createBrowserRouter([
@@ -20,9 +21,9 @@ const App = () => {
                     element:<Dashboard/>,
                     children:[
                         {
-                            // path:'/all-users',
-                            index:true,
-                            element:<AllUsers/>
+                            path:'/',
+                            // index:true,
+                            element:<AllUsers/>,
                         },
                         {
                             path:'/products',
@@ -35,6 +36,10 @@ const App = () => {
                         {
                             path:'/login',
                             element:<Login/>
+                        },
+                        {
+                            path:':profile',
+                            element:<Profile/>
                         }
                     ]
                 }

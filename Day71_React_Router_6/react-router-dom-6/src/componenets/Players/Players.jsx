@@ -1,8 +1,11 @@
 import React, { Fragment, useState } from 'react'
 import cricketPlayers from '../../players.json'
+import { useLocation } from 'react-router-dom'
 
 const Players = () => {
     let [players, setplayers] = useState(cricketPlayers)
+    const {state} = useLocation()
+    console.log(state)
   return (
     <div className='players'>
         <h1>Cricket Players</h1>

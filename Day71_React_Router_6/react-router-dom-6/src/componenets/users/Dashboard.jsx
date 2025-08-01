@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 
 const Dashboard = () => {
   return (
@@ -8,9 +8,11 @@ const Dashboard = () => {
       <main className='dashboard-content'>
         <ul>
           <li>
-            <Link to='/' state={{name:"Shanu",company:"TestYantra",salarY:20000}}>All users</Link>
-            <Link to='/products' state={{name:"Lavan",company:"Pasmina Software Solution",salarY:40000}}>Products</Link>
-            <Link to='/players' >Players</Link>
+            <NavLink to='/' state={{name:"Shanu",company:"TestYantra",salarY:20000}} className={({isActive})=> (isActive === true? 'active':'')}>All users</NavLink>
+
+            <NavLink to='/products' state={{name:"Lavan",company:"Pasmina Software Solution",salarY:40000}} className={({isActive})=> (isActive === true? 'active':'')}>Products</NavLink>
+            
+            <NavLink to='/players' state={{name:"Sailaja",company:"Pasmina Software Solution",city:"Lakhisarai"}} className={({isActive})=> (isActive === true? 'active':'')}>Players</NavLink>
           </li>
         </ul>
       </main>
