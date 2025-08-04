@@ -6,7 +6,7 @@ const CategoryContainer = () => {
     console.log(category)
   return (
     <div>
-        
+        {category}
     </div>
   )
 }

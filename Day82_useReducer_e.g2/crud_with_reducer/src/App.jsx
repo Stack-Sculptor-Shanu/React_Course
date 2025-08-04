@@ -1,0 +1,57 @@
+import React from 'react'
+import './index.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from './Pages/Layout'
+import Home from './Pages/Home'
+import NotFound from './Pages/NotFound'
+import CreateCourse from './Components/courses/CreateCourse'
+import AllCourses from './Components/courses/AllCourses'
+import CourseDetails from './Components/courses/CourseDetails'
+import EditCourse from './Components/courses/EditCourse'
+import AllUsers from './Components/users/AllUsers'
+
+const App = () => {
+  const routes = createBrowserRouter([
+    {
+      path:'/',
+      element:<Layout/>,
+      children:[
+        {
+          path:'/',
+          element:<Home/>,
+          children:[
+            {
+              index:true,
+              element:<AllCourses/>
+            },
+            {
+              path:'/createcourse',
+              element:<CreateCourse/>
+            },
+            {
+              path:'/:id',
+              element:<CourseDetails/>
+            },
+            {
+              path:'/edit/:id',
+              element:<EditCourse/>
+            },
+            {
+              path:'/users',
+              element:<AllUsers/>
+            }
+          ]
+        },
+        {
+          path:"*",
+          element:<NotFound/>
+        }
+      ]
+    }
+  ])
+  return (
+    <RouterProvider router={routes}></RouterProvider>
+  )
+}
+
+export default App
