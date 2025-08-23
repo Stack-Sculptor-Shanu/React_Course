@@ -424,3 +424,17 @@ body{
     border-radius: 10px;
     text-align: center;
 }
+.nav-link{
+    background: var(--base-btn-color);
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.nav-link:hover{
+    background: transparent;
+    border: 1px solid var(--base-crimson-color);
+    color: #673ab7;
+    transition: all 500ms;
+}

@@ -1,13 +1,15 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Spinner from '../../Pages/spinner/Spinner'
 import Course from '../../Pages/Course'
 import courseServices from '../../services/CourseService'
 import SearchCourses from '../Sesarchfilter/SearchCourses'
+import { UserContextAPI } from '../../context/UserContext'
 
 const AllCourses = () => {
     let [state, setstate] = useState(null)
     let [searchterm, setsearchterm] = useState("")
+    let {users, fetchusers} = useContext(UserContextAPI)
 
     let fetchData = async ()=>{
         let data = await courseServices.fetchService()

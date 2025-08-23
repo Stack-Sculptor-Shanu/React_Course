@@ -50,6 +50,12 @@
 // export default App
 
 
+//! useReducer => complex state object go with useReducer
+//! the useReducer is the alternative to the usestate hook whenever have complex state
+//! useState => basic state object go with useState
+//? The contextAPI with useReducer is the best option to create complex state logic in react application
+//? for state management like redux, recoil, mobx useReducer is the best option compared to useState
+
 
 import React from 'react'
 import UseReducer from './UseReducer'

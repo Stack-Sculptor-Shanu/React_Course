@@ -5,7 +5,8 @@ import { userAPI_Instance } from '../axiosInstance/UserAxiosInstance'
 export const UserContextApi = createContext()
 
 const initialState = {
-    users:[                     ],
+    users:[],
+    singleUser:null,
     isLoading:true
 }
 
@@ -16,9 +17,16 @@ const UserProvider = ({children}) => {
         let {data} = await userAPI_Instance.get('/users')
         dispatch({type: "fetch", payload:data, isLoading: false})
         console.log(data)
-        // users.users = data
     }
-    return <UserContextApi.Provider value={{users,fetchUsers}}>
+    let singleUser = async (id) => {
+        try {
+            let {data} = await userAPI_Instance.get(`/user/${id}`)
+        dispatch({type:"singleUser", singleUser:data})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    return <UserContextApi.Provider value={{users,fetchUsers,singleUser}}>
         {children}
     </UserContextApi.Provider>
 }

@@ -56,7 +56,7 @@ const AllUsers = () => {
                       <td>{user.name}</td>
                       <td>{user.email}</td>
                       <td>{user.role}</td>
-                      <td><Link to={`/users/${user.id}`}>View Profile</Link></td>
+                      <td><Link to={`/users/${user.id}`}className='nav-link'>View Profile</Link></td>
                     </tr>
                   ))
                 }
