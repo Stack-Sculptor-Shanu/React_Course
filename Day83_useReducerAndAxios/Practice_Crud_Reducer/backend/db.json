@@ -1,0 +1,32 @@
+{
+  "courses": [
+    {
+      "title": "Python",
+      "trainer": "Sailaja",
+      "description": "High Level language",
+      "updatedAt": "2025-07-11",
+      "id": "170b"
+    },
+    {
+      "id": "699e",
+      "title": "Express JS",
+      "trainer": "Shanu",
+      "description": "Express is a framework of JS",
+      "createdAt": "2025-07-18"
+    },
+    {
+      "id": "e4a9",
+      "title": "Dotnet",
+      "trainer": "Lavan",
+      "description": "I will teach DOtnet",
+      "createdAt": "2025-07-16"
+    },
+    {
+      "id": "0869",
+      "title": "Python",
+      "trainer": "Laxmi",
+      "description": "I will teach Python",
+      "createdAt": "2025-07-26"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 const userReducer = (state,action) => {
-    switch (action.type) {
+    let {type, users, singleUser} = action
+    switch (type) {
         case 'fetch':
             return {
                 ...state,

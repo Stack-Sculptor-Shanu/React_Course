@@ -6,19 +6,19 @@ const GetSingleUser = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const {data} = await userAPI_Instance.get(`/users/${id}`);
-        setUser(data);
-        console.log(data);
-      } catch (error) {
-        console.error('Error fetching user:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     try {
+  //       const {data} = await userAPI_Instance.get(`/users/${id}`);
+  //       setUser(data);
+  //       console.log(data);
+  //     } catch (error) {
+  //       console.error('Error fetching user:', error);
+  //     }
+  //   };
 
-    fetchUser();
-  }, [id]);
+  //   fetchUser();
+  // }, [id]);
 
   return (
     <div>
